@@ -1,5 +1,4 @@
 import React, { forwardRef } from "react";
-import { COURT_DIMENSIONS } from "@/constants/volleyball";
 
 interface CourtProps {
   children: React.ReactNode;
@@ -33,3 +32,5 @@ export const Court = forwardRef<HTMLDivElement, CourtProps>(
     );
   }
 );
+
+Court.displayName = "Court";
