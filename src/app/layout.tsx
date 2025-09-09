@@ -14,9 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Éditeur de Rotations de Volley",
-  description: "Application interactive pour apprendre et créer des rotations de volley-ball",
+  description:
+    "Application interactive pour apprendre et créer des rotations de volley-ball",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.ico",
   },
 };
 
