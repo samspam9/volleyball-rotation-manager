@@ -10,12 +10,13 @@ Application web interactive pour **apprendre** et **créer** des rotations de vo
 ## ✨ Fonctionnalités
 
 ### Apprentissage
+
 - **Visualisation interactive** du terrain avec 6 joueurs
 - **3 phases par position** : Départ, Service, Réception
 - **6 positions** de rotation complètes
-- **Règles du volley** : Rotation horaire, Setter/Opposite opposés, Libéro automatique
 
 ### Création
+
 - **Mode édition** avec drag & drop des joueurs
 - **Gestion des flèches** de mouvement
 - **Export/Import** des configurations personnalisées
@@ -43,7 +44,6 @@ yarn dev
 
 - **Next.js 15** + **React 19** + **TypeScript**
 - **Tailwind CSS** pour le design responsive
-- **Système de store** en mémoire pour les configurations
 
 ## 📱 Responsive
 
