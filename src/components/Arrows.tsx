@@ -50,10 +50,8 @@ export const Arrows: React.FC<ArrowsProps> = ({
             />
           </svg>
 
-          {/* Poignées de contrôle des flèches (mode édition) */}
           {isEditMode && (
             <>
-              {/* Poignée de fin seulement */}
               <div
                 className="absolute w-4 h-4 sm:w-6 sm:h-6 bg-red-500 border border-white sm:border-2 rounded-full cursor-move hover:scale-125 transition-transform z-30 shadow-lg"
                 style={{

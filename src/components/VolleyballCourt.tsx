@@ -35,7 +35,6 @@ const VolleyballCourt: React.FC<VolleyballCourtProps> = ({
     resetPositions,
   } = useVolleyballRotation(rotation, selectedStep, selectedPhase);
 
-  // États pour le drag & drop
   const [draggedPlayer, setDraggedPlayer] = useState<number | null>(null);
   const [draggedArrow, setDraggedArrow] = useState<string | null>(null);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
@@ -85,7 +84,6 @@ const VolleyballCourt: React.FC<VolleyballCourtProps> = ({
     };
   }, [exportConfigurations]);
 
-  // Gestion du drag & drop des joueurs
   const handleMouseDown = (e: React.MouseEvent, playerId: number) => {
     if (!isEditMode) return;
     e.preventDefault();
@@ -142,7 +140,6 @@ const VolleyballCourt: React.FC<VolleyballCourtProps> = ({
     }
   };
 
-  // Gestion du drag & drop des flèches
   const handleArrowMouseDown = (
     e: React.MouseEvent,
     arrowId: string,
@@ -202,7 +199,6 @@ const VolleyballCourt: React.FC<VolleyballCourtProps> = ({
     setDraggedArrow(null);
   };
 
-  // Ajouter une flèche pour un joueur spécifique
   const addArrowForPlayer = (playerId: number) => {
     const newArrow: MovementArrow = {
       id: `arrow-${Date.now()}`,
@@ -221,7 +217,6 @@ const VolleyballCourt: React.FC<VolleyballCourtProps> = ({
     }
   };
 
-  // Supprimer une flèche
   const removeArrow = (arrowId: string) => {
     if (selectedPhase === "serve") {
       setServeArrows((prev) => prev.filter((arrow) => arrow.id !== arrowId));
