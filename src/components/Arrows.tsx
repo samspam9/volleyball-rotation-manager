@@ -1,5 +1,5 @@
 import React from "react";
-import { MovementArrow } from "@/types/volleyball";
+import { MovementArrow } from "@/types/rotation";
 
 interface ArrowsProps {
   arrows: MovementArrow[];

@@ -1,4 +1,5 @@
-import { PlayerPosition, Phase, Player } from "@/types/volleyball";
+import { Phase, Player } from "@/types/volleyball";
+import { PlayerPosition } from "@/types/rotation";
 import { BASE_PLAYERS } from "@/constants/volleyball";
 
 // Fonction pour obtenir les joueurs selon la phase

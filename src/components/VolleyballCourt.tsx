@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Phase, MovementArrow } from "@/types/volleyball";
+import { Phase } from "@/types/volleyball";
+import { MovementArrow } from "@/types/rotation";
 import { useVolleyballRotation } from "@/hooks/useVolleyballRotation";
 import { Court } from "./Court";
 import { Players } from "./Players";

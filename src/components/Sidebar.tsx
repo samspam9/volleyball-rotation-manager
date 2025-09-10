@@ -2,18 +2,14 @@ import React from "react";
 import { RotationSelector } from "./RotationSelector";
 import { ExportImportButtons } from "./ExportImportButtons";
 import { PositionSelector } from "./PositionSelector";
+import { Rotation } from "@/types/rotation";
 
 interface SidebarProps {
   selectedRotation: string;
   selectedStep: number;
   onRotationChange: (rotation: string) => void;
   onStepChange: (step: number) => void;
-  rotations: Array<{
-    id: string;
-    name: string;
-    description: string;
-    config?: any;
-  }>;
+  rotations: Rotation[];
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({

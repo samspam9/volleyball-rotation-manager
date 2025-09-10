@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
-import { PlayerPosition, MovementArrow, Phase } from "@/types/volleyball";
+import { Phase } from "@/types/volleyball";
+import { PlayerPosition, MovementArrow } from "@/types/rotation";
 import { getPlayersForPhase } from "@/utils/rotations";
 // Store manager simple pour sauvegarder les positions
 interface StoredData {

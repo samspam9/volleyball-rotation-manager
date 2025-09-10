@@ -1,4 +1,5 @@
-import { Player, PlayerPosition } from "@/types/volleyball";
+import { Player } from "@/types/volleyball";
+import { PlayerPosition } from "@/types/rotation";
 
 export const BASE_PLAYERS: Player[] = [
   { id: 1, role: "Setter", abbreviation: "S" },

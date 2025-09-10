@@ -1,5 +1,6 @@
 import React from "react";
-import { Player, PlayerPosition, MovementArrow } from "@/types/volleyball";
+import { Player } from "@/types/volleyball";
+import { PlayerPosition, MovementArrow } from "@/types/rotation";
 import { PLAYER_SIZE } from "@/constants/volleyball";
 
 interface PlayersProps {

@@ -1,56 +1,5 @@
 import React from "react";
-
-interface Rotation {
-  id: string;
-  name: string;
-  description: string;
-  config?: {
-    name: string;
-    rotation: string;
-    totalSteps: number;
-    steps: Array<{
-      step: number;
-      phases: {
-        starting: {
-          positions: Array<{ top: number; left: number }>;
-          arrows: Array<{
-            id: string;
-            startX: number;
-            startY: number;
-            endX: number;
-            endY: number;
-            color: string;
-            playerId: number;
-          }>;
-        };
-        serve: {
-          positions: Array<{ top: number; left: number }>;
-          arrows: Array<{
-            id: string;
-            startX: number;
-            startY: number;
-            endX: number;
-            endY: number;
-            color: string;
-            playerId: number;
-          }>;
-        };
-        serveReceive: {
-          positions: Array<{ top: number; left: number }>;
-          arrows: Array<{
-            id: string;
-            startX: number;
-            startY: number;
-            endX: number;
-            endY: number;
-            color: string;
-            playerId: number;
-          }>;
-        };
-      };
-    }>;
-  } | null;
-}
+import { Rotation } from "@/types/rotation";
 
 interface RotationSelectorProps {
   selectedRotation: string;
