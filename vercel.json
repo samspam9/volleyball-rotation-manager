@@ -1,0 +1,13 @@
+{
+  "buildCommand": "yarn build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "yarn install",
+  "devCommand": "yarn dev",
+  "regions": ["cdg1"],
+  "functions": {
+    "app/**": {
+      "maxDuration": 30
+    }
+  }
+}
